@@ -39,7 +39,7 @@ with mlflow.start_run(run_name=f'rf-{n_estimators}-{max_depth}'):
 
     # 2) tags de tracabilite : qui, quel code, quelles donnees
     commit = subprocess.getoutput('git rev-parse --short HEAD')
-    mlflow.set_tags({'auteur': 'VOTRE-NOM',          # <-- a remplacer
+    mlflow.set_tags({'auteur': 'SOUFIANE',          # <-- a remplacer
                      'commit': commit,
                      'jeu_de_donnees': 'transactions v1'})
 
